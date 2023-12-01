@@ -1,0 +1,23 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.wuyou</groupId>
+        <artifactId>wuyou-dependencies</artifactId>
+        <version>${reversion}</version>
+        <relativePath>../wuyou-dependencies</relativePath>
+    </parent>
+
+    <artifactId>wuyou-system</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>wuyou-system-dao</module>
+        <module>wuyou-system-api</module>
+        <module>wuyou-system-service</module>
+        <module>wuyou-system-manager</module>
+        <module>wuyou-system-web</module>
+        <module>wuyou-system-start</module>
+    </modules>
+
+    <name>wuyou-system</name>
+</project>

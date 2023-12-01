@@ -1,0 +1,51 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.wuyou</groupId>
+        <artifactId>wuyou-components</artifactId>
+        <version>0.0.1</version>
+    </parent>
+
+    <artifactId>wuyou-webmvc-config</artifactId>
+    <packaging>jar</packaging>
+
+    <name>wuyou-web</name>
+    <description>关于spring webmvc的配置,如跨域,jackson配置,全局异常处理等</description>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.wuyou</groupId>
+            <artifactId>wuyou-core</artifactId>
+            <version>${reversion}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>jakarta.servlet</groupId>
+            <artifactId>jakarta.servlet-api</artifactId>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.hibernate.validator</groupId>
+            <artifactId>hibernate-validator</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-autoconfigure</artifactId>
+        </dependency>
+
+
+    </dependencies>
+</project>

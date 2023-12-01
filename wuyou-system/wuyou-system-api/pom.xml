@@ -1,0 +1,30 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.wuyou</groupId>
+        <artifactId>wuyou-system</artifactId>
+        <version>${reversion}</version>
+    </parent>
+
+    <artifactId>wuyou-system-api</artifactId>
+    <packaging>jar</packaging>
+
+    <name>wuyou-system-api</name>
+    <description>api层,用于提供dto,service,feign接口等</description>
+    <dependencies>
+
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-extension</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.wuyou</groupId>
+            <artifactId>wuyou-core</artifactId>
+            <version>${reversion}</version>
+        </dependency>
+
+
+    </dependencies>
+</project>

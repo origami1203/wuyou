@@ -1,0 +1,28 @@
+server:
+  port: 9000
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: root
+    url: jdbc:mysql://localhost:3306/system?useSsl=false
+  jpa:
+    properties:
+      hibernate:
+        hbm2ddl:
+          auto: update
+
+rocketmq:
+  name-server: 127.0.0.1:9876
+  access-channel: LOCAL
+  producer:
+    group: test
+  pull-consumer:
+    group: test
+    topic: test-topic
+
+logging:
+  level:
+    org.wuyou: debug
+    org.springframework.data: debug
